@@ -1,0 +1,187 @@
+body {
+  background-color: #d8d874;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+h1{
+   color: #800000;
+   opacity: 1;
+   font-style: normal;
+   font-family: 'Archivo Black', sans-serif;
+}
+#title {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        margin: 0px;
+
+        background-color: #d8d874;
+        color: #800000;
+        opacity: 1;
+        font-size: 30px;
+        background-image: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+        background-position: center;
+        background-size: auto;
+}
+
+
+  /*Styling the gallery styles*/
+  /* Hiking images styles */
+  .hiking{
+          width: 100%;
+}
+
+  .hiking_wrapper{
+           display: grid;
+           grid-template-columns: repeat(3, auto);
+           grid-gap: 5px;
+           width: 100%;
+            }
+
+/* Camping images styles */
+.camping{
+         width: 100%;
+}
+
+.camping_wrapper{
+                 display: grid;
+                 grid-template-columns: repeat(3, auto);
+                 grid-gap: 5px;
+                 width: 100%;
+}
+
+/* Fishing images styles */
+.fishing{
+         width: 100%;
+}
+
+.fishing_wrapper{
+                 display: grid;
+                 grid-template-columns: repeat(3, auto);
+                 grid-gap: 5px;
+                 width: 100%;
+}
+
+/* Rock Climbing images styles */
+.rock_climbing{
+               width: 100%;
+}
+
+.rock_climbing_wrapper{
+                       display: grid;
+                       grid-template-columns: repeat(3, auto);
+                       grid-gap: 5px;
+                       width: 100%
+}
+
+/* Styling my footer */
+footer{
+       overflow: hidden;
+       background-color: #47d147;
+       height: 90px;
+       border: 2px solid black;
+       color: #800000;
+       font-size: 25px;
+}
+
+/*Responsive Design*/
+
+
+/*Responsive Design for desktop*/
+@media only screen (max-width: 800px) {
+  .hiking_wrapper{
+           display: grid;
+           grid-template-columns: repeat(3, auto);
+           grid-gap: 5px;
+           width: 100%;
+            }
+
+            .camping_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .fishing_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .rock_climbing_wrapper{
+                                   display: grid;
+                                   grid-template-columns: repeat(3, auto);
+                                   grid-gap: 5px;
+                                   width: 100%
+            }
+}
+
+/*Responsive Design for large desktop*/
+@media only screen (max-width: 900px) {
+  .hiking_wrapper{
+           display: grid;
+           grid-template-columns: repeat(3, auto);
+           grid-gap: 5px;
+           width: 100%;
+            }
+
+            .camping_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .fishing_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .rock_climbing_wrapper{
+                                   display: grid;
+                                   grid-template-columns: repeat(3, auto);
+                                   grid-gap: 5px;
+                                   width: 100%
+            }
+}
+
+
+/*Responsive Design for mobile devices*/
+@media only screen and (max-width:620px) {
+
+  .hiking_wrapper{
+           display: grid;
+           grid-template-columns: repeat(1, 500px);
+           grid-template-rows: repeat(6, 500px);
+           grid-gap: 5px;
+           width: 100%;
+            }
+
+            .camping_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .fishing_wrapper{
+                             display: grid;
+                             grid-template-columns: repeat(3, auto);
+                             grid-gap: 5px;
+                             width: 100%;
+            }
+
+            .rock_climbing_wrapper{
+                                   display: grid;
+                                   grid-template-columns: repeat(3, auto);
+                                   grid-gap: 5px;
+                                   width: 100%
+            }
+}

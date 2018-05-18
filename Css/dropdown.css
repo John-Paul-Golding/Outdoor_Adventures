@@ -1,0 +1,129 @@
+/*Styling my dropdown navbar with some css styles*/
+/*styling the body tag*/
+body{
+     width: 100%
+}
+
+/*Beginning to style the navbar*/
+.navbar {
+  display: inline;
+  overflow: hidden;
+  padding: 0px;
+  margin-top: 0px;
+  color: gray;
+  background-color: #47d147;
+  opacity: 0.85;
+  height: 50px;
+  width: 100%;
+  font-family: font-family: 'Archivo Black', sans-serif;
+}
+
+/*navbar links styles*/
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*From line 32 to line 78: dropdown navbar styles*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  color: goldenrod;
+  background-color: #ddd;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*Responsive Design*/
+/*Responsive Design for desktop*/
+@media only screen (max-width: 800px){
+  .navbar, .navbar a, .dropdown, .dropdown, .dropbtn, .navbar a:hover,
+  .dropdown:hover, .dropdown-content, .dropdown-content a, .dropdown-content a:hover,{
+    display: inline;
+    overflow: hidden;
+    padding: 0px;
+    margin-top: 0px;
+    color: gray;
+    background-color: #47d147;
+    opacity: 0.85;
+    height: 50px;
+    width: 100%;
+    font-family: font-family: 'Archivo Black', sans-serif;
+  }
+}
+
+/*Responsive Design for large desktop*/
+@media only screen (max-width: 900px){
+  .navbar, .navbar a, .dropdown, .dropdown, .dropbtn, .navbar a:hover,
+  .dropdown:hover, .dropdown-content, .dropdown-content a, .dropdown-content a:hover,{
+    display: inline;
+    overflow: hidden;
+    padding: 0px;
+    margin-top: 0px;
+    color: gray;
+    background-color: #47d147;
+    opacity: 0.85;
+    height: 50px;
+    width: 100%;
+    font-family: font-family: 'Archivo Black', sans-serif;
+  }
+}
+
+/*Responsive Design for mobile devices*/
+@media only screen (max-width: 620px){
+  .navbar, .navbar a, .dropdown, .dropdown, .dropbtn, .navbar a:hover,
+  .dropdown:hover, .dropdown-content, .dropdown-content a, .dropdown-content a:hover,{
+      display: inline;
+      overflow: hidden;
+      padding: 0px;
+      margin-top: 0px;
+      color: gray;
+      background-color: #47d147;
+      opacity: 0.85;
+      height: 50px;
+      width: 100%;
+      font-family: font-family: 'Archivo Black', sans-serif;
+}

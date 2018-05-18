@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="stylesheet" href="Css/dropdown.css">
+    <link rel="stylesheet" href="Css/gallery.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+  </head>
+  <body>
+    <header id="title">
+      <h1><center>Outdoor Adventures</center></h1>
+    <nav id="navbar" class="navbar">
+      <a href="Outdoor_adventures.html">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">Categories
+              <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Hiking</a>
+              <a href="#">Camping</a>
+              <a href="#">Fishing</a>
+              <a href="#">Rock Climbing</a>
+            </div>
+            </div>
+          <a href="Gallery.html">Gallery</a>
+          <a href="#">Contact us</a>
+    </nav>
+  </header>
+
+<h2><center>Contact us</center></h2>
+
+<section class="container">
+  <form class="contact" action="index.html" method="post">
+    <label for="name">First Name</label>
+    <input type="text" name="firstname" id="firstname" placeholder="Your first name">
+
+    <label for="surname">Last Name</label>
+    <input type="text" name="lastname" id="lastname" placeholder="Your last name">
+
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email" placeholder="example@gmail.com">
+
+    <label for="subject">Category</label>
+    <select id="subject" name="category" >
+      <option value="hiking">Hiking</option>
+      <option value="camping">Camping</option>
+      <option value="fishing">Fishing</option>
+      <option value="rock_climbing">Rock Climbing</option>
+    </select>
+
+    <label for="Message">Message</label>
+    <textarea id="message"  name="Message box" placeholder="Write to us..."></textarea>
+
+     <input type="submit" value="Submit">
+
+  </form>
+</section>
+<hr>
+
+<footer>
+  <center><p>Website developed & designed by John-Paul Golding</p></center></footer>
+  </body>
+</html>

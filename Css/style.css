@@ -1,0 +1,106 @@
+/*Declare all variables at the top*/
+/*Declaring mixin's*/
+body {
+  background-color: #d8d874;
+  margin: 0px;
+  padding: 0px;
+  width: 100%; }
+  body p {
+    font-size: 16px;
+    font-family: 'Kavivanar', cursive; }
+
+h1, h2, h3 {
+  color: #800000;
+  opacity: 1;
+  font-style: normal;
+  font-family: 'Archivo Black', sans-serif; }
+
+/*Including styles for my title*/
+#title {
+  display: grid;
+  grid-column: 1fr;
+  grid-row: 1fr;
+  background-color: #d8d874;
+  font-size: 30px;
+  background-image: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+  #title h1 {
+    color: #800000;
+    opacity: 1; }
+
+/*Including styles for my main container*/
+.mainContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  width: 100%; }
+
+/*Including styles for my container*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repaet(1, 1fr);
+  grid-gap: 10px;
+  width: 60%;
+  padding-left: 150px; }
+
+/*Including styles for my images on my homepage*/
+.Camping {
+  grid-column: 2/3; }
+
+.aside {
+  background-color: #47d147;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  width: 80%;
+  height: 800px;
+  margin-left: 20px;
+  color: #800000; }
+
+.Fishing {
+  grid-column: 1/2;
+  grid-row-start: 2;
+  grid-row-end: 2; }
+
+.Rock_climbing {
+  grid-column: 2/3; }
+
+/*hiking article section*/
+.hiking_section {
+  width: 100%;
+  margin-left: 100px;
+  border: 2px solid; }
+
+/*fishing article section*/
+.Fishing_section {
+  width: 100%;
+  margin-left: 100px;
+  border: 2px solid; }
+
+/*camping article section*/
+.Camping_section {
+  width: 100%;
+  margin-left: 100px;
+  border: 2px solid; }
+
+/*rock_climbing article section*/
+.rock_climbing_section {
+  width: 100%;
+  margin-left: 100px;
+  border: 2px solid; }
+
+/*including styles for my footer*/
+footer {
+  overflow: hidden;
+  background-color: #47d147;
+  height: 90px;
+  border: 2px solid black;
+  color: #800000;
+  font-size: 25px; }
+
+/*# sourceMappingURL=style.css.map */
