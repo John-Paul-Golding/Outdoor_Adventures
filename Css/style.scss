@@ -7,14 +7,12 @@ $primaryFontSize:30px;
 $sectionColor: black;
 @mixin title{
              display: grid;
-             grid-column: 1fr;
-             grid-row: 1fr;
-             background-color: #d8d874;
-h1,{
-    color: #800000;
+             grid-column: auto;
+             grid-row: auto;
+h1{
+    color: #c0ca33;
     opacity: 1;
   }
-
              font-size: $primaryFontSize;
              background-image: url(https://images.pexels.com/photos/418831/pexels-photo-418831.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
              background-position: center;
@@ -22,7 +20,6 @@ h1,{
              width: 100%;
              margin: 0px;
              padding: 0px;
-
 }
 
 @mixin navbar_grid{
@@ -30,55 +27,26 @@ h1,{
                    grid-column: 1fr;
                    grid-row: 1fr;
                    background-color: #29a329;
-}
-
- @mixin mainContainer{
-                    display: grid;
-                    grid-template-columns: repeat(2,1fr);
-                    grid-template-rows: repeat(1,1fr);
-                    width: 100%;
-
+                   // width: 100%;
 }
 
 @mixin container{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repaet(1,1fr);
-            grid-gap: 10px;
-            width: 60%;
-            padding-left: 150px;
-            }
-
-
-@mixin Camping{
-               grid-column: 2/3
-
-}
+                 display: grid;
+                 grid-template-areas:
+                 "aside article article article article article";
+                 grid-gap: 10px;
+                 // height: auto;
+                 margin-right: 10%;
+  }
 
 @mixin aside{
              background-color: $secondaryColor;
-             display: grid;
-             grid-template-columns: 1fr;
-             grid-template-rows: 1fr;
-             width: 80%;
-             height: 800px;
-             margin-left: 20px;
              color: #800000;
+             width: 60%;
+             margin-left: 10%;
            }
 
-@mixin fishing{
-               grid-column: 1/2;
-               grid-row-start: 2;
-               grid-row-end: 2;
-}
-
-@mixin rock_climbing{
-                    grid-column: 2/3;
-}
-
 @mixin section{
-                width: 100%;
-                margin-left: 100px;
                 border: 2px solid;
 }
 
@@ -96,6 +64,7 @@ body{
      margin: 0px;
      padding: 0px;
      width: 100%;
+
 p{
   font-size: 16px;
   font-family: 'Kavivanar', cursive;
@@ -109,14 +78,14 @@ h1, h2, h3{
   font-family: 'Archivo Black', sans-serif;
 }
 
+.image{
+          height: 50%;
+          width: 70%;
+}
+
 /*Including styles for my title*/
 #title{
   @include title
-}
-
-/*Including styles for my main container*/
- .mainContainer{
-  @include mainContainer
 }
 
 /*Including styles for my container*/
@@ -125,20 +94,8 @@ h1, h2, h3{
 }
 
 /*Including styles for my images on my homepage*/
-.Camping{
-  @include Camping
-}
-
 .aside{
   @include aside
-}
-
-.Fishing{
-  @include fishing
-}
-
-.Rock_climbing{
- @include rock_climbing
 }
 
 /*hiking article section*/

@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Outdoor Adventures</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="Css/style.css">
     <link rel="stylesheet" href="Css/dropdown.css">
+    <link rel="stylesheet" href="Css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
   </head>
@@ -16,70 +18,69 @@
       <h1><center>Outdoor Adventures</center></h1>
     <nav id="navbar" class="navbar">
       <a href="#">Home</a>
-          <div class="dropdown">
-            <button class="dropbtn">Categories
-              <!-- <i class="fa fa-caret-down"></i> -->
-            </button>
-            <div class="dropdown-content">
-              <a href="#Hiking">Hiking</a>
-              <a href="#Camping">Camping</a>
-              <a href="#Fishing">Fishing</a>
-              <a href="#Rock Climbing">Rock Climbing</a>
-            </div>
-            </div>
-          <a href="Gallery.html">Gallery</a>
-          <a href="contact.html">Contact us</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="contact.html">Contact us</a>
     </nav>
   </header>
 
 <p></p>
 
-<div class="mainContainer">
-  <div class="container">
-    <article class="Hiking">
+<div class="container">
+    <aside class="aside">
+    <section>
+      <h2>Safety Tips</h2>
+      <p>The most effective way to prevent mishaps is to adequately prepare for the trip. Knowledge of the area, weather, terrain, limitations of your body, plus a little common sense can help to ensure a safe and enjoyable trip.</p>
+
+  <p></p>
+<!-- Using a tag in place of a break tag -->
+
+  <p>1) Travel with a companion</p>
+  <p>2) Be in good physical condition</p>
+  <p>3) Think about your footing while traveling near cliffs</p>
+  <p>4) Wear appropriate clothing</p>
+  <p>5) Check your equipment</p>
+  <p>6) Be weather wise</p>
+  <p>7) Learn basic first aid</p>
+  <p>8) Make camp before dark</p>
+  <p>9) Be alert for slippery areas</p>
+  <p>10) Think before you drink</p>
+    </section>
+
+  </aside>
+
+  <!-- These are my images on my homepage, wrapped in one div -->
+  <!-- use of semantic html such as the article tag to avoid using too many div tags -->
+  <div>
+    <article class="hiking">
       <h1>Hiking </h1>
-      <a href="#Hiking"><img src="https://media-cdn.tripadvisor.com/media/photo-s/04/c4/f7/69/platteklip-gorge-route.jpg" alt="hiking"></a>
+      <a href="#Hiking"><img src="https://media-cdn.tripadvisor.com/media/photo-s/04/c4/f7/69/platteklip-gorge-route.jpg" alt="hiking" class="image"></a>
     </article>
 
-    <article class="Camping">
+
+    <article class="camping">
     <h1>Camping</h1>
-   <a href="#Camping"><img src="http://holidogz.co.za/blog/wp-content/uploads/2015/08/pet-friendly-campsite.jpg" width= "550px" height="366px" alt="camping"></a>
+   <a href="#Camping"><img src="http://holidogz.co.za/blog/wp-content/uploads/2015/08/pet-friendly-campsite.jpg" alt="camping" class="image"></a>
   </article>
 
-    <article class="Fishing">
+<div class="empty">
+<!-- this is an empty div -->
+</div>
+
+
+    <article class="fishing">
     <h1>Fishing</h1>
-    <a href="#Fishing"><img src="https://images.pexels.com/photos/192454/pexels-photo-192454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="fishing" width="550px" height="366px"></a>
+    <a href="#Fishing"><img src="https://images.pexels.com/photos/192454/pexels-photo-192454.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="fishing" class="image"></a>
   </article>
 
-  <article class="Rock_climbing">
+
+  <article class="rockClimbing">
     <h1>Rock Climbing</h1>
-    <a href="#Rock Climbing"><img src="https://images.pexels.com/photos/213966/pexels-photo-213966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="rock_climbing" width="550px" height="366px"></a>
+    <a href="#Rock Climbing"><img src="https://images.pexels.com/photos/213966/pexels-photo-213966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="rock_climbing" class="image"></a>
   </article>
-
-
+</div>
   </div>
-
-  <div class="aside">
-  <section>
-    <h2>Safety Tips</h2>
-    <p>The most effective way to prevent mishaps is to adequately prepare for the trip. Knowledge of the area, weather, terrain, limitations of your body, plus a little common sense can help to ensure a safe and enjoyable trip.</p>
-<p></p>
-
-<p>1) Travel with a companion</p>
-<p>2) Be in good physical condition</p>
-<p>3) Think about your footing while traveling near cliffs</p>
-<p>4) Wear appropriate clothing</p>
-<p>5) Check your equipment</p>
-<p>6) Be weather wise</p>
-<p>7) Learn basic first aid</p>
-<p>8) Make camp before dark</p>
-<p>9) Be alert for slippery areas</p>
-<p>10) Think before you drink</p>
-  </section>
-
-
-  </div>
-
+<!-- The section html code to be wriiten here on after -->
+<!-- All my information will be inserted in semantic html section tags -->
   <section class="hiking_section">
     <h1 id="Hiking">Hiking</h1>
     <p>In a city where its most famous landmark is a mountain, it's only fitting that in this picture comes a wide selection of hiking and walking trails to discover and enjoy. Some of the most popular hiking trails in Cape Town include Skeleton Gorge, Lion's Head, Kasteel Poort, Devil's Peak and Elephant's Eye.</p>
@@ -131,12 +132,13 @@
   <h3>Cape Peninsula sport climbing</h3>
   <p>Sport climbing refers to routes that are protected by preplaced bolts on the rock face to clip the safety rope to. Often people who are new to thesport prefer to get used to the equipment and activity by trying sport climbing first as it is less intimidating than trad climbing. The Cape has spectacular sport climbing crags to visit with great routes for all abilities. Most of the Peninsula sport climbing is done on single-pitch routes but some venue such as Paarl Rock do offer multi-pitch sport routes.</p>
 </section>
-</div>
-
+<!-- The end of my sections -->
 <p>
 
+<!-- The start of my footer html -->
 <footer>
 <p><center>Website developed & designed by John-Paul Golding.</center></p>
 </footer>
+<!-- Footer ends here -->
 </body>
 </html>

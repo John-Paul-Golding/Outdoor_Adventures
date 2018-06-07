@@ -1,0 +1,59 @@
+/* This is my responsive web design stylesheet
+All responsive designs will be executed here for my homepage */
+
+/*Adding responsive design for mobile devices*/
+@media screen (max-width: 360px){
+body{
+      display: block;
+      width:100%;
+}
+
+  #title{
+         display: grid;
+         grid-column: auto;
+         grid-row: auto;
+         width: %;
+  }
+
+  #navbar{
+          display: grid;
+          grid-column: 1fr;
+          grid-row: 1fr;
+          width: 100%;
+  }
+
+.container {
+            display: grid;
+            grid-template-areas:
+            "aside article"
+            "article article"
+            "article article";
+            grid-gap: 10px;
+            width: 100%;
+            }
+
+.aside{
+       width: 50%;
+}
+
+.aside p{
+          width: 50%;
+}
+
+.hiking  .image{
+        width: 50%;
+}
+
+.camping {
+        width: 50%;
+}
+
+.fishing {
+        width: 50%;
+}
+
+.rockClimbing {
+        width: 50%;
+}
+
+}
